@@ -25,6 +25,7 @@ export const Container = styled.header`
     justify-content: space-between;
 
     width: 170px;
+    height: 35px;
 
     button {
       height: 100%;
