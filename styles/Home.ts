@@ -1,10 +1,37 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.div``;
 
+export const MainContent = styled.main`
+  height: calc(100% + 30px);
+
+  text-align: center;
+
+  .description {
+    text-align: center;
+
+    margin: 0 15px;
+
+    font-size: 1.1rem;
+
+    @media (max-width: 765px) {
+      font-size: 0.9rem;
+    }
+    @media (max-width: 490px) {
+      font-size: 0.8rem;
+    }
+    @media (max-width: 445px) {
+      font-size: 0.6rem;
+    }
+    @media (max-width: 320px) {
+      font-size: 0.5rem;
+
+      margin: 0 30px;
+    }
+  }
 `;
 
-export const PageTitle = styled.h1`
+export const Title = styled.h1`
   margin: 50px 0 25px 0;
 
   font-size: 8rem;
@@ -42,26 +69,19 @@ export const PageTitle = styled.h1`
   }
 `;
 
-export const PageDescription = styled.p`
-  text-align: center;
+export const About = styled.div`
+  margin-top: 200px;
 
-  margin: 0 15px;
+  p {
+    margin-top: 15px;
 
-  font-size: 1.1rem;
+    a {
+      color: ${props => props.theme.colors.unHoveredText};
 
-  @media (max-width: 765px) {
-    font-size: 0.9rem;
-  }
-
-  @media (max-width: 490px) {
-    font-size: 0.8rem;
-  }
-  @media (max-width: 445px) {
-    font-size: 0.6rem;
-  }
-  @media (max-width: 320px) {
-    font-size: 0.5rem;
-
-    margin: 0 30px;
+      transition: 500ms;
+      :hover {
+        color: ${props => props.theme.colors.text};
+      }
+    }
   }
 `;

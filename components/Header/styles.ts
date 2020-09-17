@@ -5,11 +5,9 @@ export const Container = styled.header`
   align-items: center;
   justify-content: space-between;
 
-  width: 65%;
+  width: 100vw;
 
-  margin: 0 auto;
-
-  padding: 30px 0;
+  padding: 30px 170px;
 
   background-color: #fff;
 
@@ -17,6 +15,10 @@ export const Container = styled.header`
 
   img {
     width: 110px;
+    
+    :hover {
+      cursor: pointer;
+    }
   }
 
   div {
@@ -31,11 +33,20 @@ export const Container = styled.header`
       height: 100%;
       width: 80px;
 
+      text-decoration: none;
+
       color: #fff;
 
+      font-size: 1.3rem;
+
       background-color: ${props => props.theme.colors.primary};
-      
+
+      border-radius: 7px;      
       border: 2px solid ${props => props.theme.colors.primary};
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       cursor: pointer;
 

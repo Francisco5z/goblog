@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
   :root {
-    font-size: 16px;
+    font-size: 100%;
   }
 
   * {
@@ -18,6 +18,8 @@ export default createGlobalStyle`
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
     width: 100vw;
+
+    overflow-x: hidden;    
   }
 
   button {
@@ -37,5 +39,15 @@ export default createGlobalStyle`
 
   p {
     color: ${props => props.theme.colors.description};
+  }
+
+  a {
+    text-decoration: none;
+    color: ${props => props.theme.colors.unHoveredText};
+
+    transition: 500ms;
+    :hover {
+      color: ${props => props.theme.colors.text};
+    }
   }
 `

@@ -6,8 +6,11 @@ declare module "styled-components" {
 
     colors: {
       primary: string;
+      text: string;
       title: string;
       description: string;
+      footer: string;
+      unHoveredText: string;
     }
   }
 }
