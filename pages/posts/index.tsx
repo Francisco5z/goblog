@@ -1,4 +1,4 @@
-import { Container, PostsGrid } from "./_styles";
+import { Container, PostsGrid } from "../../styles/Posts";
 
 import ReactMarkDown from 'react-markdown';
 
