@@ -3,7 +3,12 @@ import styled from 'styled-components';
 export const Container = styled.div``;
 
 export const MainContent = styled.main`
+  display: flex;
+  flex-direction: column;
+
   height: calc(100% + 30px);
+
+  padding-top: 140px;
 
   text-align: center;
 
@@ -14,63 +19,37 @@ export const MainContent = styled.main`
 
     font-size: 1.1rem;
 
-    @media (max-width: 765px) {
+    @media (max-width: 715px) {
       font-size: 0.9rem;
-    }
-    @media (max-width: 490px) {
-      font-size: 0.8rem;
-    }
-    @media (max-width: 445px) {
-      font-size: 0.6rem;
-    }
-    @media (max-width: 320px) {
-      font-size: 0.5rem;
-
-      margin: 0 30px;
     }
   }
 `;
 
 export const Title = styled.h1`
-  margin: 50px 0 25px 0;
+  margin: 0 0 25px 0;
 
-  font-size: 8rem;
+  font-size: max(8rem, 2rem);
 
   text-align: center;
 
   letter-spacing: -5px;
   line-height: 1;
 
-  @media (max-width: 765px) {
+  @media (max-width: 715px) {
     font-size: 6rem;
   }
-  @media (max-width: 580px) {
-    font-size: 5rem;
+  @media (max-width: 610px) {
+    font-size: 4rem;
   }
-  @media (max-width: 490px) {
-    font-size: 4.5rem;
-
-    margin-top: 40px;
-  }
-  @media (max-width: 445px) {
-    font-size: 3.6rem;
-
-    margin-top: 30px;
-  }
-  @media (max-width: 400px) {
+  @media (max-width: 350px) {
     font-size: 3rem;
-
-    margin-top: 20px;
-  }
-  @media (max-width: 320px) {
-    font-size: 2.5rem;
-
-    margin-top: 15px;
   }
 `;
 
 export const About = styled.div`
   margin-top: 200px;
+
+  padding: 0 7px;
 
   p {
     margin-top: 15px;
@@ -83,5 +62,9 @@ export const About = styled.div`
         color: ${props => props.theme.colors.text};
       }
     }
+  }
+
+  @media (max-width: 715px) {
+    margin-top: 150px;
   }
 `;

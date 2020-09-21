@@ -10,17 +10,19 @@ export default function Header() {
 
   return (
     <Container>
-      <Link href="/">
-        <img src="/goblog.svg" alt="GoBlog" />
-      </Link>
+      <div className="header-content">
+        <Link href="/">
+          <img src="/goblog.svg" alt="GoBlog" />
+        </Link>
 
 
-      <div>
-        <button onClick={() => router.push('/posts')}> Ler </button> 
+        <div>
+          <button onClick={() => router.push('/posts')}> Ler </button> 
 
-        <a href="https://github.com/Francisco5z/goblog" target="_blanck">
-          <AiFillGithub size={30} />
-        </a>
+          <a href="https://github.com/Francisco5z/goblog" target="_blanck">
+            <AiFillGithub size={30} />
+          </a>
+        </div>
       </div>
     </Container>
   )

@@ -3,30 +3,44 @@ import styled from 'styled-components';
 export const Container = styled.header`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
   width: 100vw;
-
-  padding: 30px 170px;
+  height: 110px;
 
   background-color: #fff;
 
   z-index: 2;
+  position: fixed;
+  top: 0px;
 
-  img {
-    width: 110px;
-    
-    :hover {
-      cursor: pointer;
+  .header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    max-width: 1000px;
+    min-width: 250px;
+
+    padding: 0 20px;
+
+    width: 100%;
+
+    img {
+      width: 110px;
+      
+      :hover {
+        cursor: pointer;
+      }
     }
-  }
 
-  div {
+    div {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    width: 170px;
+    max-width: 170px;
+    min-width: 130px;
     height: 35px;
 
     button {
@@ -62,25 +76,16 @@ export const Container = styled.header`
       color: #000000;
     }
   }
+  }
 
-  @media (max-width: 890px) {
-    width: 75%;
-  }
-  @media (max-width: 750px) {
-    width: 85%;
-  }
-  @media (max-width: 450px) {
-    img {
-      width: 90px;
+  @media (max-width: 710px) {
+    .header-content {
+      padding: 0 40px;
     }
-
-    div {
-      height: 30px;
-      width: 130px;
-
-      button {
-        font-size: 1rem;
-      }
+  }
+  @media (max-width: 320px) {
+    .header-content {
+      padding: 0 15px;
     }
   }
 `;

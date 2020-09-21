@@ -5,7 +5,8 @@ import Document, {
   Head,
   Main,
   NextScript
-} from 'next/document'
+} from 'next/document';
+
 import { ServerStyleSheet } from 'styled-components'
 
 export default class MyDocument extends Document {
@@ -39,7 +40,6 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt-br">
         <Head>
-          <title> GoBlog </title>
           <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet" />
         </Head>
         <body>

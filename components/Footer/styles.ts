@@ -5,37 +5,42 @@ export const Container = styled.footer`
   height: 200px;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   text-align: left;
 
   margin-top: 100px;
-  padding: 0 170px;
 
   border-top: 1px solid rgb(234, 234, 234);
 
   background-color: ${props => props.theme.colors.footer};
 
-  div {
-    ul {
-      margin-top: 10px;
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-      padding: 0 5px;
+    max-width: 700px;
 
-      list-style: none;
-
-      font-size: 0.9rem;
-    }
+    width: 100%;
   }
 
-  @media (max-width: 940px) {
-    padding: 0 100px;
-  }
-  @media (max-width: 500px) {
+  @media (max-width: 780px) {
     padding: 0 50px;
   }
-  @media (max-width: 320px) {
+  @media (max-width: 430px) {
     padding: 0 20px;
+  }
+  @media (max-width: 320px) {
+    .footer-content {
+      img {
+        width: 110px;
+      }
+
+      h1 {
+        font-size: 0.8rem;
+      }
+    }
   }
 `;
