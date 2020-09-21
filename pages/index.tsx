@@ -1,10 +1,7 @@
-import Head from 'next/head';
-
-
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
-import { Container, MainContent, Title, About } from './_styles';
+import { Container, MainContent, Title, About } from '../styles/Home';
 import resolveClassTitle from "../utils/classTitle";
 
 export default function Home() {
